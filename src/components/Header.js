@@ -9,7 +9,7 @@ const Header = () => {
             {/* min-h-[500px] */}
             <h1 className='font-bold text-[24px] sm:text-[32px]'>{datails.Title}</h1>
 
-            <input type="text" className='border rounded shadow-sm mt-4 focus:outline-none px-2 py-2  w-[70%]' value={userInput} onChange={(event) => setuserInput(event.target.value)} />
+            <input type="text" placeholder='Enter city name' className='border rounded shadow-sm mt-4 focus:outline-none px-2 py-2  w-[70%]' value={userInput} onChange={(event) => setuserInput(event.target.value)} />
 
             <button className='bg-[#2196F3] px-2 py-1 rounded  mt-4 text-white' onClick={handleCallApi}>
                 {datails.btn}
